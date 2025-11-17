@@ -1,0 +1,14 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.4.7
+  SuggestExtensions: false # stop bugging me with other suggested plugins
+  Include:
+    - '**/*.rb'
+
+plugins:
+  - rubocop-minitest
+
+Style/Documentation: # Don't require documentation comments
+  Enabled: false
+Style/FrozenStringLiteralComment: # Don't require the '# frozen_string_literal: true' magic comment
+  Enabled: false
