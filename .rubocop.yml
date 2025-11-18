@@ -4,10 +4,13 @@ AllCops:
   SuggestExtensions: false # stop bugging me with other suggested plugins
   Include:
     - '**/*.rb'
+  # DefaultFormatter: pacman
 
 plugins:
   - rubocop-minitest
 
+Naming/VariableNumber: # prefer variable_1 over variable1
+  EnforcedStyle: snake_case
 Style/Documentation: # Don't require documentation comments
   Enabled: false
 Style/FrozenStringLiteralComment: # Don't require the '# frozen_string_literal: true' magic comment

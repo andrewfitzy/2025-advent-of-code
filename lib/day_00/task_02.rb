@@ -1,9 +1,5 @@
-class Day00Task02
-  attr_reader :value
-
-  def initialize
-    @value = 11
+module Day00Task02
+  def solve(data)
+    data.map(&:to_i).reduce(1, :*) # map data to ints and multiply by each item, implicit return
   end
 end
-
-puts "Value: #{Day00Task02.new.value}/10"

@@ -1,9 +1,5 @@
-class Day00Task01
-  attr_reader :value
-
-  def initialize
-    @value = 10
+module Day00Task01
+  def solve(data)
+    data.map(&:to_i).sum # map data to ints and sum each item, implicit return
   end
 end
-
-puts "Value: #{Day00Task01.new.value}/10"
