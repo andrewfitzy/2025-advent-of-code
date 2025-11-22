@@ -15,8 +15,9 @@ In this year I chose to use the following tools:
 - [Minitest v5.26.1](https://github.com/minitest/minitest/releases/tag/v5.26.1). Unit test framework
 - [Rubocop v1.81.7](https://docs.rubocop.org/rubocop/1.81/index.html). Linter
 - [pre-commit v0.40.0](https://github.com/jish/pre-commit)
+- [debase v0.2.9](https://github.com/ruby-debug/debase). Used for debugging
 
-All development is completed using [VS Code](https://code.visualstudio.com).
+All development is completed using [VS Code](https://code.visualstudio.com) with the [Ruby LSP](https://github.com/Shopify/ruby-lsp) plugin installed.
 
 ## Setup
 Firstly install dependencies
@@ -29,7 +30,7 @@ Then install the pre-commit hooks.
 ╰─❯ pre-commit install
 ```
 
-My environment is now setup and ready to go.
+The environment is now setup and ready to go.
 
 ## Testing
 To run all the tests:
@@ -64,16 +65,3 @@ The pre-commit hook should kick-in, when it does it will lint and prettify the c
 | [Day 10](https://adventofcode.com/2025/day/10) |  |  |  |
 | [Day 11](https://adventofcode.com/2025/day/11) |  |  |  |
 | [Day 12](https://adventofcode.com/2025/day/12) |  |  |  |
-| [Day 13](https://adventofcode.com/2025/day/13) |  |  |  |
-| [Day 14](https://adventofcode.com/2025/day/14) |  |  |  |
-| [Day 15](https://adventofcode.com/2025/day/15) |  |  |  |
-| [Day 16](https://adventofcode.com/2025/day/16) |  |  |  |
-| [Day 17](https://adventofcode.com/2025/day/17) |  |  |  |
-| [Day 18](https://adventofcode.com/2025/day/18) |  |  |  |
-| [Day 19](https://adventofcode.com/2025/day/19) |  |  |  |
-| [Day 20](https://adventofcode.com/2025/day/20) |  |  |  |
-| [Day 21](https://adventofcode.com/2025/day/21) |  |  |  |
-| [Day 22](https://adventofcode.com/2025/day/22) |  |  |  |
-| [Day 23](https://adventofcode.com/2025/day/23) |  |  |  |
-| [Day 24](https://adventofcode.com/2025/day/24) |  |  |  |
-| [Day 25](https://adventofcode.com/2025/day/25) |  |  |  |

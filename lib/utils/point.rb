@@ -7,4 +7,18 @@ Point = Data.define(:x, :y) do
   def in_bounds?(start_x:, start_y:, width:, height:)
     x >= start_x and y >= start_y and x < start_x + width and y < start_y + height
   end
+
+  def eql?(other)
+    self.class == other.class && x == other.x && y == other.y
+  end
+
+  def hash
+    # Apparently, this is a common Ruby idiom: create an array from the key attributes
+    # and use the Array's hashingfunction.
+    [x, y].hash
+  end
+
+  def to_s
+    "(#{x}, #{y})"
+  end
 end

@@ -106,4 +106,99 @@ class PointTest < Minitest::Test
     # Then
     refute(is_in_bounds)
   end
+
+  def test_eq_locically_equal
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+    point_02 = Point.new(x: 1, y: 6)
+
+    # When
+    is_equal = point_01.eql?(point_02)
+
+    # Then
+    assert(is_equal)
+  end
+
+  def test_eq_object_equal
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+
+    # When
+    is_equal = point_01.eql?(point_01)
+
+    # Then
+    assert(is_equal)
+  end
+
+  def test_eq_not_logically_equal
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+    point_02 = Point.new(x: 6, y: 1)
+
+    # When
+    is_equal = point_01.eql?(point_02)
+
+    # Then
+    refute(is_equal)
+  end
+
+  def test_eq_type_mismatch
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+    struct_01 = Struct.new(:x, :y).new(1, 5)
+
+    # When
+    is_equal = point_01.eql?(struct_01)
+
+    # Then
+    refute(is_equal)
+  end
+
+  # rubocop:disable Lint/BinaryOperatorWithIdenticalOperands
+  def test_hash_is_consistent_for_same_object
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+
+    # When
+    is_equal = point_01.hash == point_01.hash
+
+    # Then
+    assert(is_equal)
+  end
+  # rubocop:enable Lint/BinaryOperatorWithIdenticalOperands
+
+  def test_hash_is_consistent_for_different_object
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+    point_02 = Point.new(x: 1, y: 6)
+
+    # When
+    is_equal = point_01.hash == point_02.hash
+
+    # Then
+    assert(is_equal)
+  end
+
+  def test_hash_for_logically_different_object
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+    point_02 = Point.new(x: 6, y: 1)
+
+    # When
+    is_equal = point_01.hash == point_02.hash
+
+    # Then
+    refute(is_equal)
+  end
+
+  def test_to_s
+    # Given
+    point_01 = Point.new(x: 1, y: 6)
+
+    # When
+    point_01_str = point_01.to_s
+
+    # Then
+    assert_equal '(1, 6)', point_01_str
+  end
 end

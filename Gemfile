@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 group :development do
+  gem 'debase'
   gem 'pre-commit', require: false
   gem 'rubocop'
   gem 'rubocop-minitest', require: false

@@ -15,3 +15,5 @@ Style/Documentation: # Don't require documentation comments
   Enabled: false
 Style/FrozenStringLiteralComment: # Don't require the '# frozen_string_literal: true' magic comment
   Enabled: false
+Metrics/MethodLength: # I dont mind functions with more than 10 lines
+  Enabled: false

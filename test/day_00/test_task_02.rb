@@ -12,10 +12,10 @@ class Day00Task02Test < Minitest::Test
     puzzle_input = get_input(input_path)
 
     # When
-    result = solve(puzzle_input)
+    result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(362_880_000_000_000, result)
+    assert_equal(5, result)
   end
 
   def test_solve_puzzle
@@ -24,9 +24,9 @@ class Day00Task02Test < Minitest::Test
     puzzle_input = get_input(input_path)
 
     # When
-    result = solve(puzzle_input)
+    result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(1_278_767_724_609_375, result)
+    assert_equal(14, result)
   end
 end
