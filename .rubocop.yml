@@ -1,3 +1,6 @@
+plugins:
+  - rubocop-minitest
+
 AllCops:
   NewCops: enable
   TargetRubyVersion: 3.4.7
@@ -6,14 +9,9 @@ AllCops:
     - '**/*.rb'
   # DefaultFormatter: pacman
 
-plugins:
-  - rubocop-minitest
-
 Naming/VariableNumber: # prefer variable_1 over variable1
   EnforcedStyle: snake_case
 Style/Documentation: # Don't require documentation comments
-  Enabled: false
-Style/FrozenStringLiteralComment: # Don't require the '# frozen_string_literal: true' magic comment
   Enabled: false
 Metrics/MethodLength: # I dont mind functions with more than 10 lines
   Enabled: false

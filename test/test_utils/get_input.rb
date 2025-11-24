@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module TestUtils
   def get_input(filename)
     File.readlines(filename, chomp: true)

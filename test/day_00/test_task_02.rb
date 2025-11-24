@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require_relative '../../lib/day_00/task_02'
 require_relative '../test_utils/get_input'

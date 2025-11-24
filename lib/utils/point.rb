@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Point = Data.define(:x, :y) do
   def get_manhattan_distance(other_point)
     # .abs gets the absolute value (positive number)
