@@ -53,7 +53,7 @@ The pre-commit hook should kick-in, when it does it will lint and prettify the c
 ## Progress
 |                                                | Challenge              |                                         Task 1                                          |                                         Task 2                                          |
 | :--------------------------------------------- | :--------------------- | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
-| [Day 01](https://adventofcode.com/2025/day/1)  |  |  |  |
+| [Day 01](https://adventofcode.com/2025/day/1)  | Secret Entrance | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_01/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_01/task_02.rb) |
 | [Day 02](https://adventofcode.com/2025/day/2)  |  |  |  |
 | [Day 03](https://adventofcode.com/2025/day/3)  |  |  |  |
 | [Day 04](https://adventofcode.com/2025/day/4)  |  |  |  |

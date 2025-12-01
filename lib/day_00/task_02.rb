@@ -26,13 +26,13 @@ module Day00Task02
 
     until queue.empty?
       location, path = queue.shift
+      next if visited.member?(location)
+
       visited.add(location)
       return path if input_grid[location.y][location.x] == target
 
       next_locations = get_available_moves(location: location, grid: input_grid)
       next_locations.each do |next_location|
-        next if visited.member?(next_location)
-
         new_path = path + [next_location]
         queue.push([next_location, new_path])
       end

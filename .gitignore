@@ -1,6 +1,9 @@
 # Specific ignores for this AoC repo
 input.txt
 
+# crappy Mac files
+.DS_Store
+
 *.gem
 *.rbc
 /.config
