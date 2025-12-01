@@ -3,6 +3,7 @@
 require 'minitest/autorun'
 require_relative '../../lib/day_00/task_02'
 require_relative '../test_utils/get_input'
+require_relative '../test_utils/skip_ci'
 
 class Day00Task02Test < Minitest::Test
   include Day00Task02
@@ -21,6 +22,7 @@ class Day00Task02Test < Minitest::Test
   end
 
   def test_solve_puzzle
+    skip_on_ci
     # Given
     input_path = File.join(__dir__, 'input.txt')
     puzzle_input = get_input(input_path)
