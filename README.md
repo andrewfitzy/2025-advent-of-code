@@ -53,10 +53,10 @@ The pre-commit hook should kick-in, when it does it will lint and prettify the c
 ## Progress
 |                                                | Challenge              |                                         Task 1                                          |                                         Task 2                                          |
 | :--------------------------------------------- | :--------------------- | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
-| [Day 01](https://adventofcode.com/2025/day/1)  | Secret Entrance | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_01/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_01/task_02.rb) |
-| [Day 02](https://adventofcode.com/2025/day/2)  | Gift Shop.      | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_02/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_02/task_02.rb) |
-| [Day 03](https://adventofcode.com/2025/day/3)  | Lobby.          | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_03/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_03/task_02.rb) |
-| [Day 04](https://adventofcode.com/2025/day/4)  |  |  |  |
+| [Day 01](https://adventofcode.com/2025/day/1)  | Secret Entrance     | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_01/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_01/task_02.rb) |
+| [Day 02](https://adventofcode.com/2025/day/2)  | Gift Shop.          | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_02/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_02/task_02.rb) |
+| [Day 03](https://adventofcode.com/2025/day/3)  | Lobby.              | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_03/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_03/task_02.rb) |
+| [Day 04](https://adventofcode.com/2025/day/4)  | Printing Department | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_04/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_04/task_02.rb) |
 | [Day 05](https://adventofcode.com/2025/day/5)  |  |  |  |
 | [Day 06](https://adventofcode.com/2025/day/6)  |  |  |  |
 | [Day 07](https://adventofcode.com/2025/day/7)  |  |  |  |
