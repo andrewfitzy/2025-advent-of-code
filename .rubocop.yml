@@ -17,3 +17,5 @@ Metrics/MethodLength: # I dont mind functions with more than 10 lines
   Enabled: false
 Metrics/AbcSize: # not that fussed if I have a few more assignments or calls out to other functions that the ideal number
   Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
