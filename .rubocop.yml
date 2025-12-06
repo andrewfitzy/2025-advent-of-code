@@ -19,3 +19,7 @@ Metrics/AbcSize: # not that fussed if I have a few more assignments or calls out
   Enabled: false
 Metrics/CyclomaticComplexity:
   Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
