@@ -14,5 +14,6 @@ group :test do
 end
 
 group :runtime do
+  gem 'algorithms'
   gem 'rake'
 end
