@@ -61,7 +61,7 @@ The pre-commit hook should kick-in, when it does it will lint and prettify the c
 | [Day 06](https://adventofcode.com/2025/day/6)  | Trash Compactor        | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_06/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_06/task_02.rb) |
 | [Day 07](https://adventofcode.com/2025/day/7)  | Laboratories           | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_07/task_01.rb) |  |
 | [Day 08](https://adventofcode.com/2025/day/8)  | Playground             | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_08/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_08/task_02.rb) |
-| [Day 09](https://adventofcode.com/2025/day/9)  |  |  |  |
+| [Day 09](https://adventofcode.com/2025/day/9)  | Movie Theater          | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_09/task_01.rb) |  |
 | [Day 10](https://adventofcode.com/2025/day/10) |  |  |  |
 | [Day 11](https://adventofcode.com/2025/day/11) |  |  |  |
 | [Day 12](https://adventofcode.com/2025/day/12) |  |  |  |
