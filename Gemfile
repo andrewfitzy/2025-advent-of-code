@@ -15,5 +15,7 @@ end
 
 group :runtime do
   gem 'algorithms'
+  gem 'geometry'
+  gem 'matrix'
   gem 'rake'
 end
