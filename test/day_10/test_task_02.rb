@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require_relative '../../lib/day_09/task_02'
+require_relative '../../lib/day_10/task_02'
 require_relative '../test_utils/get_input'
 require_relative '../test_utils/skip_ci'
 
-class Day09Task02Test < Minitest::Test
-  include Day09Task02
+class Day10Task02Test < Minitest::Test
+  include Day10Task02
   include TestUtils
 
   def test_solve_example_01
@@ -18,18 +18,10 @@ class Day09Task02Test < Minitest::Test
     result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(24, result)
+    assert_equal(3, result)
   end
 
-  def test_x_test_solve_puzzle
-    # uncommenting and running this will take a long time, hee is the output form my run:
-    # Finished in 388086.979478s, 0.0000 runs/s, 0.0000 assertions/s.
-    #
-    # The co-ordinates I found were:
-    # (94710,67739)  TO  (4890,50238)
-    #
-    # It works but is very sloooow.
-    #
+  def test_solve_puzzle
     skip_on_ci
     # Given
     input_path = File.join(__dir__, 'input.txt')
@@ -39,6 +31,6 @@ class Day09Task02Test < Minitest::Test
     result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(1_572_047_142, result)
+    assert_equal(197, result)
   end
 end
