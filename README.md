@@ -64,4 +64,4 @@ The pre-commit hook should kick-in, when it does it will lint and prettify the c
 | [Day 09](https://adventofcode.com/2025/day/9)  | Movie Theater          | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_09/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_09/task_02.rb) |
 | [Day 10](https://adventofcode.com/2025/day/10) | Factory                |  |  |
 | [Day 11](https://adventofcode.com/2025/day/11) | Reactor                |  |  |
-| [Day 12](https://adventofcode.com/2025/day/12) | Christmas Tree Farm.   |  |  |
+| [Day 12](https://adventofcode.com/2025/day/12) | Christmas Tree Farm.   | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_12/task_01.rb) |  |
