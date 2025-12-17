@@ -4,6 +4,25 @@ require_relative '../utils/point'
 
 module Day11Task02
   def solve(data:)
-    data.length # map data to ints and sum each item, implicit return
+    # aaa: you hhh
+    # you: bbb ccc
+    # bbb: ddd eee
+    # ccc: ddd eee fff
+    # ddd: ggg
+    # eee: out
+    # fff: out
+    # ggg: out
+    # hhh: ccc fff iii
+    # iii: out
+
+    device_list = {}
+
+    data.each do |line|
+      parts = line.split
+      device = parts[0].sub(':', '')
+      outputs = (1..(parts.length - 1)).map { |i| parts[i] }
+      device_list[device] = outputs
+    end
+    device_list.length # return map size for now
   end
 end
