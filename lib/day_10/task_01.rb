@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Machine = Data.define(:light, :buttons, :joltage)
+Machine = Data.define(:light, :number_of_bulbs, :buttons, :joltage)
 
 module Day10Task01
   def process_input(input:)
@@ -8,6 +8,10 @@ module Day10Task01
     light = []
     buttons = []
     joltage = []
+
+    light_bin = 0b0
+    buttons_bin = []
+    number_of_bulbs = 0
 
     parts.each do |part|
       if part.start_with? '['
@@ -20,6 +24,9 @@ module Day10Task01
           end
           light.append(1)
         end
+        number_of_bulbs = light.length
+        # Convert the light to binary
+        light_bin = light.join.to_i(2)
       end
       if part.start_with? '('
         # create a light array sized array with 1s and 0s in the given places
@@ -29,44 +36,42 @@ module Day10Task01
           button[bulb_affected] = 1
         end
         buttons.append(button)
+        # Convert the button to binary
+        button_bin = button.join.to_i(2)
+        buttons_bin.append(button_bin)
       end
       joltage = part.sub('{', '').sub('}', '').split(',').map(&:to_i) if part.start_with? '{'
     end
-    Machine.new(light: light, buttons: buttons, joltage: joltage)
+    Machine.new(light: light_bin, number_of_bulbs: number_of_bulbs, buttons: buttons_bin, joltage: joltage)
   end
 
   def get_minimum_presses(machine:)
     minimum_presses = 1_000_000 # large number we should always get lower than
     found = false
-    (1..machine.light.length).each do |iteration|
+
+    button_presses = 1
+    until found
       # Get the permutations of button presses for a given length
-      button_permutations = machine.buttons.permutation(iteration).to_a
+      button_permutations = machine.buttons.permutation(button_presses).to_a
 
       # For each of the permutations
       button_permutations.each do |permutation|
         # The light starts with all bulbs out
-        light = Array.new(machine.light.length) { 0 }
+        light = Array.new(machine.number_of_bulbs) { 0 }.join.to_i(2)
 
         # process each item in the permutation, this is one button press
         permutation.each do |button_press|
-          # apply button press to light
-          (0..(button_press.length - 1)).each do |index|
-            next unless button_press[index] == 1
-
-            if light[index] == 1
-              light[index] = 0
-              next
-            end
-            light[index] = 1
-          end
+          # the current light is binary and the button is binary so xor
+          light ^= button_press
         end
 
         found = true if light == machine.light
       end
       if found
-        minimum_presses = iteration
+        minimum_presses = button_presses
         break
       end
+      button_presses += 1
     end
     minimum_presses
   end
