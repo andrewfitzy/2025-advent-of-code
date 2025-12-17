@@ -17,6 +17,9 @@ In this year I chose to use the following tools:
 - [pre-commit v0.40.0](https://github.com/jish/pre-commit)
 - [debase v0.2.9](https://github.com/ruby-debug/debase). Used for debugging
 
+I also had to add the following library for one of the solutions (day 10 pt 2)
+- [z3 v4.15.4](https://github.com/Z3Prover/z3)
+
 All development is completed using [VS Code](https://code.visualstudio.com) with the [Ruby LSP](https://github.com/Shopify/ruby-lsp) plugin installed.
 
 ## Setup
@@ -28,6 +31,11 @@ Firstly install dependencies
 Then install the pre-commit hooks.
 ```bash
 ╰─❯ pre-commit install
+```
+
+For day 10, z3 needs to be installed.
+```bash
+╰─❯ brew install z3
 ```
 
 The environment is now setup and ready to go.
@@ -62,6 +70,6 @@ The pre-commit hook should kick-in, when it does it will lint and prettify the c
 | [Day 07](https://adventofcode.com/2025/day/7)  | Laboratories           | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_07/task_01.rb) |  |
 | [Day 08](https://adventofcode.com/2025/day/8)  | Playground             | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_08/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_08/task_02.rb) |
 | [Day 09](https://adventofcode.com/2025/day/9)  | Movie Theater          | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_09/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_09/task_02.rb) |
-| [Day 10](https://adventofcode.com/2025/day/10) | Factory                | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_10/task_01.rb) |  |
+| [Day 10](https://adventofcode.com/2025/day/10) | Factory                | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_10/task_01.rb) | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_10/task_02.rb) |
 | [Day 11](https://adventofcode.com/2025/day/11) | Reactor                |  |  |
 | [Day 12](https://adventofcode.com/2025/day/12) | Christmas Tree Farm.   | [🌟](https://github.com/andrewfitzy/2025-advent-of-code/blob/main/lib/day_12/task_01.rb) |  |

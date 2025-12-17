@@ -18,4 +18,5 @@ group :runtime do
   gem 'geometry'
   gem 'matrix'
   gem 'rake'
+  gem 'z3'
 end

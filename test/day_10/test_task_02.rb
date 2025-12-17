@@ -18,7 +18,7 @@ class Day10Task02Test < Minitest::Test
     result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(3, result)
+    assert_equal(33, result)
   end
 
   def test_solve_puzzle
@@ -31,6 +31,6 @@ class Day10Task02Test < Minitest::Test
     result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(197, result)
+    assert_equal(18_105, result)
   end
 end

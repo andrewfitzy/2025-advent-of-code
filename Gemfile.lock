@@ -6,6 +6,8 @@ GEM
     debase (0.2.9)
       debase-ruby_core_source (>= 3.4.1)
     debase-ruby_core_source (3.4.1)
+    ffi (1.17.2)
+    ffi (1.17.2-x86_64-darwin)
     geometry (6.6)
     json (2.16.0)
     language_server-protocol (3.17.0.5)
@@ -46,6 +48,8 @@ GEM
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.1.0)
+    z3 (0.0.20251017)
+      ffi (~> 1.17)
 
 PLATFORMS
   ruby
@@ -61,6 +65,7 @@ DEPENDENCIES
   rake
   rubocop
   rubocop-minitest
+  z3
 
 BUNDLED WITH
    2.6.9
