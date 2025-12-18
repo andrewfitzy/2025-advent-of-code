@@ -1,18 +1,10 @@
 # frozen_string_literal: true
 
 module Day11Task01
-  def solve(data:)
-    # aaa: you hhh
-    # you: bbb ccc
-    # bbb: ddd eee
-    # ccc: ddd eee fff
-    # ddd: ggg
-    # eee: out
-    # fff: out
-    # ggg: out
-    # hhh: ccc fff iii
-    # iii: out
+  OUT = 'out'
+  YOU = 'you'
 
+  def solve(data:)
     device_list = {}
 
     data.each do |line|
@@ -21,6 +13,29 @@ module Day11Task01
       outputs = (1..(parts.length - 1)).map { |i| parts[i] }
       device_list[device] = outputs
     end
-    device_list.length # return map size for now
+    paths = find_paths(device_list: device_list)
+    paths.length
+  end
+
+  def find_paths(device_list:)
+    queue = []
+
+    queue.push([YOU, [YOU]])
+
+    e2e_paths = []
+    until queue.empty?
+      location, path = queue.shift
+      if location == OUT
+        e2e_paths.append(path)
+        next
+      end
+
+      next_locations = device_list[location]
+      next_locations.each do |next_location|
+        new_path = path + [next_location]
+        queue.push([next_location, new_path])
+      end
+    end
+    e2e_paths
   end
 end
