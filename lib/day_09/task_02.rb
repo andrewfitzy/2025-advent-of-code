@@ -85,7 +85,6 @@ module Day09Task02
     largest_rectangle = nil
     until candidate_queue.empty?
       rectangle = candidate_queue.pop
-      puts get_area(rectangle: rectangle)
       in_polygon = rectangle.edges.all? do |edge|
         max = edge.max
         min = edge.min
