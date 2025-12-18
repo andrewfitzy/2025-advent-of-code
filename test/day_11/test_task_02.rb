@@ -11,14 +11,14 @@ class Day11Task02Test < Minitest::Test
 
   def test_solve_example_01
     # Given
-    input_path = File.join(__dir__, 'example_input_01.txt')
+    input_path = File.join(__dir__, 'example_input_02.txt')
     puzzle_input = get_input(input_path)
 
     # When
     result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(10, result)
+    assert_equal(2, result)
   end
 
   def test_solve_puzzle
@@ -31,6 +31,6 @@ class Day11Task02Test < Minitest::Test
     result = solve(data: puzzle_input)
 
     # Then
-    assert_equal(589, result)
+    assert_equal(380_961_604_031_372, result)
   end
 end
